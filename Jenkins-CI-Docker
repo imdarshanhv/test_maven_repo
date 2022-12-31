@@ -2,10 +2,10 @@ pipeline {
   environment {
     dockerimagename = "darshanhv/docker_cicd"
     registry_url = "https://registry.hub.docker.com"
-    registryCredential = 'my-docker-private-id'
+    registryCredential = 'docker_credentials'
     }
     tools {
-        maven 'maven3.8.7'
+        maven 'maven'
     }
     
 	agent {
